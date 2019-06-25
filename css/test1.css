@@ -64,6 +64,15 @@ body{
         display: inline-block;
     }
 
+    .container_profile_btn{
+        width: 100px;
+        margin: 70px auto;
+    }
+    .profile_btn{
+        width: 100px;
+        padding: 5px 30px;
+    }
+
 }
 
 @media screen and (max-width: 767px){
