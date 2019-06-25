@@ -1,0 +1,71 @@
+body{
+    background-color: aquamarine;
+}
+
+@media screen and (min-width: 767px) {
+
+    .container {
+        width: 50vw;
+        height: 70vh;
+        background-color: aquamarine;
+        border: solid 15px white;
+        border-radius: 10px;
+        padding: 30px 50px;
+        margin: 0 auto;
+    }
+
+
+    .profile_name_value {
+        width: 260px;
+        padding: 0 0 0 10px;
+        margin: 20px 20px;
+        border-left: solid 10px black;
+        display: inline-block;
+    }
+
+    .profile_age_value {
+        width: 260px;
+        padding: 0 0 0 10px;
+        margin: 20px 20px;
+        border-left: solid 10px black;
+        display: inline-block;
+    }
+
+    .profile_sex_value {
+        width: 260px;
+        padding: 0 0 0 10px;
+        margin: 20px 20px;
+        border-left: solid 10px black;
+        display: inline-block;
+    }
+
+    .profile_name_content {
+        display: inline-block;
+    }
+
+    .box_name {
+        width: 200px;
+        padding: 5px;
+    }
+
+    .profile_age_content {
+        display: inline-block;
+    }
+
+    .profile_age_content select {
+        padding: 3px 5px;
+    }
+
+    .profile_sex_content {
+        display: inline-block;
+    }
+
+    .profile_sex_content form {
+        display: inline-block;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+
+}
