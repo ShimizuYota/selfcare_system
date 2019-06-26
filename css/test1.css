@@ -46,6 +46,8 @@ body{
     .box_name {
         width: 200px;
         padding: 5px;
+        border: solid 2px gray;
+        border-radius: 3px;
     }
 
     .profile_age_content {
@@ -54,6 +56,11 @@ body{
 
     .profile_age_content select {
         padding: 3px 5px;
+    }
+
+    .profile_age_select{
+        border: solid 2px gray;
+        border-radius: 3px;
     }
 
     .profile_sex_content {

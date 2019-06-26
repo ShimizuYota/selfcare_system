@@ -6,7 +6,7 @@
     <title>Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/test1.js"></script>
     <link rel="stylesheet" type="text/css" href="css/test1.css">
 
@@ -15,6 +15,7 @@
 
     <div class="container">
         <p style="font-size: 20px; text-align: center">プロフィール情報を入力してね</p>
+        <p style="font-size: 12px; text-align: center">※入力された情報は許可なしに利用されません</p>
         <div class="container_profile_name">
             <div class="profile_name_value">
                 <p style="display: inline">ニックネーム</p>
@@ -28,12 +29,12 @@
                 <p style="display: inline">年齢</p>
             </div>
             <div class="profile_age_content">
-                <select>
-                    <option selected>10代</option>
-                    <option>20代</option>
-                    <option>30代</option>
-                    <option>40代</option>
-                    <option>50代</option>
+                <select class="profile_age_select">
+                    <option value="10" selected>10代</option>
+                    <option value="20">20代</option>
+                    <option value="30">30代</option>
+                    <option value="40">40代</option>
+                    <option value="50">50代</option>
                 </select>
             </div>
         </div>
