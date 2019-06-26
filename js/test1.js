@@ -56,7 +56,17 @@ $(function(){
 
         //入力がすべて行われているか
         if(flag_name && flag_age && flag_sex){
+
+
+
+            //サーバー通信　ajax
+
+
+
+
             alert("確認ページへ");
+
+
         }else{
             alert("入力を正しく行ってください");
         }

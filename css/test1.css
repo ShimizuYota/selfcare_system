@@ -5,13 +5,23 @@ body{
 @media screen and (min-width: 767px) {
 
     .container {
-        width: 50vw;
-        height: 70vh;
+        width: 600px;
+        height: 450px;
         background-color: aquamarine;
         border: solid 15px white;
         border-radius: 10px;
         padding: 30px 50px;
         margin: 0 auto;
+    }
+
+    .h1{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .h2{
+        font-size: 12px;
+        text-align: center;
     }
 
     .name_alert{
@@ -100,5 +110,120 @@ body{
 }
 
 @media screen and (max-width: 767px){
+
+    .container {
+        width: 230px;
+        height: 360px;
+        background-color: aquamarine;
+        border: solid 8px white;
+        border-radius: 6px;
+        padding: 8px 10px;
+        margin: 0 auto;
+    }
+
+    .h1{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .h2{
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .name_alert{
+        display: none;
+        font-size: 10px;
+        color: red;
+        margin: 0 0 0 10px;
+    }
+
+    .age_alert{
+        display: none;
+        font-size: 10px;
+        color: red;
+        margin: 0 0 0 10px;
+    }
+
+    .sex_alert{
+        display: none;
+        font-size: 10px;
+        color: red;
+        margin: 0 0 0 10px;
+    }
+
+    .profile_name_value {
+        width: 200px;
+        padding: 0 0 0 10px;
+        margin: 8px 5px 5px 5px;
+        border-left: solid 5px black;
+        display: inline-block;
+    }
+
+    .profile_name_value p{
+        font-size: 13px;
+    }
+
+    .profile_age_value {
+        width: 200px;
+        padding: 0 0 0 10px;
+        margin: 8px 5px 5px 5px;
+        border-left: solid 5px black;
+        display: inline-block;
+    }
+
+    .profile_age_value p{
+        font-size: 13px;
+    }
+
+    .profile_sex_value {
+        width: 200px;
+        padding: 0 0 0 10px;
+        margin: 8px 5px 5px 5px;
+        border-left: solid 5px black;
+        display: inline-block;
+    }
+
+    .profile_sex_value p{
+        font-size: 13px;
+    }
+
+    .profile_name_content {
+        display: inline-block;
+    }
+
+    .box_name {
+        width: 200px;
+        padding: 3px;
+        border: solid 2px gray;
+        border-radius: 3px;
+    }
+
+    .profile_age_content {
+        display: inline-block;
+    }
+
+    .profile_age_select{
+        padding: 3px 5px;
+        border: solid 2px gray;
+        border-radius: 3px;
+    }
+
+    .profile_sex_content {
+        display: inline-block;
+    }
+
+    .profile_sex_content form {
+        display: inline-block;
+    }
+
+    .container_profile_btn{
+        width: 100px;
+        margin: 10px auto;
+    }
+    .profile_btn{
+        width: 100px;
+        padding: 5px 30px;
+    }
 
 }
