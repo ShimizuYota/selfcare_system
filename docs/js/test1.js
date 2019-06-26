@@ -57,14 +57,26 @@ $(function(){
         //入力がすべて行われているか
         if(flag_name && flag_age && flag_sex){
 
+            var hostUrl= "http://localhost:3000";
+            var name = $(".box_name").val();
+            var age = $(".profile_age_select option:selected").val();
+            var sex = $('[name="sex"]:checked').val();
+            $.ajax({
+                url: hostUrl,
+                type:'POST',
+                dataType: 'json',
+                data : {
+                    name: name,
+                    age: age,
+                    sex: sex
+                },
+                timeout:3000,
+            }).done(function(data) {
+                alert("ok");
+            }).fail(function() {
+                alert("error");
+            })
 
-
-            //サーバー通信　ajax
-
-
-
-
-            alert("確認ページへ");
 
 
         }else{
