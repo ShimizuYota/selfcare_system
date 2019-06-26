@@ -14,8 +14,11 @@
 <body>
 
     <div class="container">
+        <!-- 表題 -->
         <p style="font-size: 20px; text-align: center">プロフィール情報を入力してね</p>
         <p style="font-size: 12px; text-align: center">※入力された情報は許可なしに利用されません</p>
+
+        <!-- ニックネーム入力欄 -->
         <div class="container_profile_name">
             <div class="profile_name_value">
                 <p style="display: inline">ニックネーム</p>
@@ -24,13 +27,18 @@
                 <input type="text" class="box_name" placeholder="15文字以内" maxlength="15">
             </div>
         </div>
+        <!-- name警告 -->
+        <p class="name_alert">※ニックネームを入力してください</p>
+
+        <!-- 年齢選択欄 -->
         <div class="container_profile_age">
             <div class="profile_age_value">
                 <p style="display: inline">年齢</p>
             </div>
             <div class="profile_age_content">
-                <select class="profile_age_select">
-                    <option value="10" selected>10代</option>
+                <select class="profile_age_select" onchange="selectChange()">
+                    <option value="0" selected>年齢を選択</option>
+                    <option value="10">10代</option>
                     <option value="20">20代</option>
                     <option value="30">30代</option>
                     <option value="40">40代</option>
@@ -38,16 +46,22 @@
                 </select>
             </div>
         </div>
+        <!-- age警告 -->
+        <p class="age_alert">※年齢を選択してください</p>
+
+        <!-- 性別選択部分 -->
         <div class="container_profile_sex">
             <div class="profile_sex_value">
                 <p style="display: inline">性別</p>
             </div>
             <div class="profile_sex_content">
                 <form>
-                    <input type="radio" name="sex" value="male" id="radio_male"><!--
+                    <input type="radio" name="sex" value="male" id="radio_male" onclick="radioChange()"><!--
                     --><label for="radio_male">男性</label>
-                    <input type="radio" name="sex" value="female" id="radio_female"><!--
+                    <input type="radio" name="sex" value="female" id="radio_female" onclick="radioChange()"><!--
                     --><label for="radio_female">女性</label>
+                    <input type="radio" name="sex" value="other" id="radio_none" checked="checked" style="display: none"><!--
+                    --><label for="radio_none"></label>
                     <!--
                     <input type="radio" name="sex" value="other" id="radio_other">
                     <label for="radio_other">その他</label>
@@ -55,7 +69,10 @@
                 </form>
             </div>
         </div>
+        <!-- sex警告 -->
+        <p class="sex_alert">※性別を選択してください</p>
 
+        <!-- ボタン -->
         <div class="container_profile_btn">
             <input type="button" value="次へ" onclick="" class="profile_btn">
         </div>
