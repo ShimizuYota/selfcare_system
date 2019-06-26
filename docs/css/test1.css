@@ -112,8 +112,8 @@ body{
 @media screen and (max-width: 767px){
 
     .container {
-        width: 220px;
-        height: 350px;
+        width: 270px;
+        height: 400px;
         background-color: aquamarine;
         border: solid 8px white;
         border-radius: 6px;
@@ -190,6 +190,7 @@ body{
 
     .profile_name_content {
         display: inline-block;
+        margin: 0 0 15px 0;
     }
 
     .box_name {
@@ -201,6 +202,7 @@ body{
 
     .profile_age_content {
         display: inline-block;
+        margin: 0 0 15px 0;
     }
 
     .profile_age_select{
@@ -211,6 +213,7 @@ body{
 
     .profile_sex_content {
         display: inline-block;
+        margin: 0 0 15px 0;
     }
 
     .profile_sex_content form {
