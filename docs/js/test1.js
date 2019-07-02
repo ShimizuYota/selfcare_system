@@ -66,11 +66,10 @@ $(function(){
                 type:'POST',
                 dataType: 'json',
                 data : {
-                    name: name,
-                    age: age,
-                    sex: sex
+                    "name": name,
+                    "age": age,
+                    "sex": sex
                 },
-                timeout:3000,
             }).done(function(data) {
                 alert("ok");
             }).fail(function() {
