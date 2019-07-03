@@ -12,6 +12,7 @@ app.use(function(req, res, next){
 app.post('/',function(req, res){
     var obj = {};
     console.log('body: ' + JSON.stringify(req.body.name));
+    console.log("content: " + JSON.stringify(req.body));
     var rejson = JSON.stringify(req.body);
     res.send(rejson);
 });
