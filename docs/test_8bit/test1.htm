@@ -1,0 +1,143 @@
+<head>
+	<!-- Nes.cssの導入部分? -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet">
+    
+    <!-- jQuery 外部js,css -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="test1.js"></script>
+    <link rel="stylesheet" type="text/css" href="test1.css">
+    
+</head>
+<body>
+	<div class="pannel">
+		
+		<!-- コンテナ― -->
+		<!-- classに「with-title」をつけるとpタグにclass「title」追加でタイトルがつけれる -->
+		<!-- classに「is-dark」をつけると黒いコンテナーが作れる -->
+		<!-- classに「is-rounded」をつけるとコンテナーが丸みを帯びた四角になる -->
+		<div class="nes-container with-title is-centered">
+			<p class="title">NES.cssの試験運用</p>
+			<p>NES.cssがどう使えるのかを確かめてみました。</p>
+			<p>とりあえず使えそうな機能を列挙してみます。</p>
+		</div>
+		
+		<!-- フォント -->
+		<div class="font0">・フォント</div>
+		<div class="nes-select">
+			<select required id="default_select">
+				<option value="" disabled selected hidden>Select...</option>
+				<option value="0">No Font(Press Start 2P)</option>
+				<option value="1">Misaki Font</option>
+				<option value="2">Moti Font</option>
+			</select>
+		</div>
+		
+		<!-- フォント1　Press Start 2P -->
+		<div class="font1">
+			<div class="titles">1.フォントなし(Press+Start+2P)</div>
+			<div>こんにちは!! 私の名前は清水陽太です．</div>
+			<div>Hi!! My name is Yota Shimizu.</div>
+		</div>
+		
+		<!-- フォント2　美咲フォント -->
+		<div class="font2">
+			<div class="titles">2.美咲フォント ゴシック1/ゴシック2/明朝</div>
+			<div class="misaki1">こんにちは!! 私の名前は清水陽太です．</div>
+			<div class="misaki2">こんにちは!! 私の名前は清水陽太です．</div>
+			<div class="misaki3">こんにちは!! 私の名前は清水陽太です．</div>
+			<div class="misaki1">Hi!! My name is Yota Shimizu.</div>
+			<div class="misaki2">Hi!! My name is Yota Shimizu.</div>
+			<div class="misaki3">Hi!! My name is Yota Shimizu.</div>
+		</div>
+		
+		<!-- フォント3　もちフォント -->
+		<div class="font3">
+			<div class="titles">3.もちフォント きなこ/あんこ/よもぎ</div>
+			<div class="kinako1-1">がぎがぎ．私の名前は清水陽太です．</div>
+			<div class="anko1-1">がぎがぎ．私の名前は清水陽太です．</div>
+			<div class="yomogi1-1">がぎがぎ．私の名前は清水陽太です．</div>
+			<div class="kinako1-2">がぎがぎ．私の名前は清水陽太です．</div>
+			<div class="anko1-2">がぎがぎ．私の名前は清水陽太です．</div>
+			<div class="yomogi1-2">がぎがぎ．私の名前は清水陽太です．</div>
+			<div class="kinako1-1">Hi!! My name is Yota Shimizu.</div>
+			<div class="anko1-1">Hi!! My name is Yota Shimizu.</div>
+			<div class="yomogi1-1">Hi!! My name is Yota Shimizu.</div>
+		</div>
+		
+		<br>
+		
+		<!-- ボタン・ダイアログ -->
+		<div class="button">
+			<div class="titles">・ボタン</div>
+			<!-- ボタン　input3種　Nes.css用ボタン(class[nes-btn]) -->
+			<div>
+				<input type="button" value="ボタン">
+				<input type="button" value="button">
+				<input type="button" value="ボタン" class="nes-btn">
+				<button type="button" class="nes-btn">button</button>
+			</div><br>
+			<!-- ラジオボタン -->
+			<div>
+				<label>
+					<input type="radio" class="nes-radio" name="answer" checked />
+					<span>Yes</span>
+				</label>
+				<label>
+					<input type="radio" class="nes-radio" name="answer" />
+					<span>No</span>
+				</label>
+			</div><br>
+			<!-- ダイアログ -->
+			<div>
+				<!-- 四角ダイアログ -->
+				<button type="button" class="nes-btn"
+				 onclick="document.getElementById('dialog-default').showModal();">dialog btn1-1</button>
+				<!-- 黒いダイアログにしたい場合はclassに「is-dark」を追加 -->
+				<dialog class="nes-dialog" id="dialog-default">
+					<form method="dialog">
+						<p class="misaki1">ダイアログ1-1</p>
+						<p class="misaki1">これは四角ダイアログです．</p>
+						<p class="misaki1">onclickオプションで実行．</p>
+						<menu class="dialog-menu">
+							<button class="nes-btn misaki1">キャンセル</button>
+							<button class="nes-btn misaki1 is-primary">OK</button>
+						</menu>
+					</form>
+				</dialog>
+				
+				<!-- 円型ダイアログ -->
+				<button type="button" class="nes-btn"
+				 onclick="document.getElementById('dialog-rounded').showModal();">dialog btn2-1</button>
+				<dialog class="nes-dialog is-rounded" id="dialog-rounded">
+					<form method="dialog">
+						<p class="misaki1">ダイアログ2-1</p>
+						<p class="misaki1">これは円型ダイアログです．</p>
+						<p class="misaki1">onclickオプションで実行．</p>
+						<menu class="dialog-menu">
+							<button class="nes-btn misaki1">キャンセル</button>
+							<button class="nes-btn misaki1 is-primary">OK</button>
+						</menu>
+					</form>
+				</dialog>
+			</div><br>
+			
+		</div>
+		
+		<br>
+		
+		<!-- テキストボックス -->
+		<div class="field">
+			<div class="titles">・テキスト</div>
+			<!-- テキストボックス -->
+			<div class="nes-field">
+				<input type="text" id="name_field" class="nes-input" placeholder="入力欄">
+			</div>
+			<!-- テキストエリア -->
+			<textarea id="textarea_field" class="nes-textarea"></textarea>
+		</div>
+		
+		
+	</div>
+		
+</body>
