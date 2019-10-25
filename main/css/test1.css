@@ -1,0 +1,83 @@
+/* WEBフォント導入 */
+/* 美咲フォント */
+@font-face {
+	font-family: "misaki1";
+	src: url("../font_misaki/misaki_gothic.ttf");
+}
+@font-face {
+	font-family: "misaki2";
+	src: url("../font_misaki/misaki_gothic_2nd.ttf");
+}
+@font-face {
+	font-family: "misaki3";
+	src: url("../font_misaki/misaki_mincho.ttf");
+}
+
+
+/* スタイル */
+@media screen and (min-width: 767px) {
+	/* スマホ画面に合わせて確認できるようにここは用意してあるけど書いていない
+	   画面確認をする際はページ開いてF12押してからスマホ対応画面で確認 */
+}
+@media screen and (max-width: 767px){
+	
+	/* 画面上部の付属物 */
+	.attach {
+		width: 350px;
+		height: 50px;
+		margin: 5px auto;
+	}
+	
+	.back { /* 戻るボタン */
+		float: left;
+		width: 80px;
+	}
+	.prog { /* 進行度 */
+		width: 150px;
+		height: 43px;
+		margin: 5px 12px;
+		/* visibility: hidden; */
+	}
+	.forward { /* 進むボタン */
+		float: right;
+		width: 80px;
+	}
+	
+	
+	/* 画面内 */
+	.frame {
+		width: 350px;
+		height: 600px;
+		border: solid 3px;
+		margin: 0 auto;
+		position: relative;
+	}
+	
+	.menu { /* メニューボタン */
+		position: absolute;
+		top: 6px;
+		left: 230px;
+		width: 100px;
+	}
+	
+	.menu-box { /* メニュー */
+		position: absolute;
+		top: 6px;
+		left: 7px;
+		width:330px;
+		height: 180px;
+		border: solid 3px;
+		visibility: hidden;
+	}
+	.menu-record, .menu-plaza, .menu-close { /* 診断、広場、閉じるボタン（仮） */
+		width: 300px;
+		margin: 10px auto;
+		display: block;
+	}
+	
+	
+	/* nes-???系フォント制御用 */
+	.nes-btn {
+		font-family: "misaki2";
+	}
+}
