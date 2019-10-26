@@ -25,7 +25,6 @@
 	.attach {
 		width: 350px;
 		height: 50px;
-		/* border: solid 1px; */
 		margin: 5px auto;
 	}
 	
@@ -34,9 +33,10 @@
 		width: 80px;
 	}
 	.prog { /* 進行度 */
-		margin: 5px 12px;
 		width: 150px;
 		height: 43px;
+		margin: 5px 12px;
+		/* visibility: hidden; */
 	}
 	.forward { /* 進むボタン */
 		float: right;
@@ -46,14 +46,19 @@
 	
 	/* 画面内 */
 	.frame {
+		overflow: auto;
 		width: 350px;
 		height: 600px;
-		border: solid 1px;
+		border: solid 3px;
 		margin: 0 auto;
+		position: relative;
 	}
+	
+	
 	
 	/* nes-???系フォント制御用 */
 	.nes-btn {
 		font-family: "misaki2";
 	}
+	
 }
