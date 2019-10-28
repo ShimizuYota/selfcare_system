@@ -18,6 +18,8 @@ css files
 - sample.html  
 戻るボタン、進むボタン、進行度バー付きの画面外枠のテンプレ？  
 back btn, forward btn, progress bar & main frame  
+### test files
+cssを無理やりいじくって作ったテストファイル（携帯用の大きさでしかきれいに見れません！！）  
 - test1.html  
 記録画面のサンプルのようなもの（メインメニューボタン、進行度変更の遊び付き）  
 testing html file  
