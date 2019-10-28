@@ -13,5 +13,5 @@ js files
 css files  
 - sample.html  
 back btn, forward btn, progress bar & main frame  
-- test1.html  
+- test1.html, test2.html  
 testing html file
