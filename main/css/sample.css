@@ -55,6 +55,20 @@
 	}
 	
 	
+	.btn_yes {
+		position: absolute;
+		top: 530px;
+		left: 10px;
+		width: 150px;
+	}
+	
+	.btn_no {
+		position: absolute;
+		top: 530px;
+		left: 177px;
+		width: 150px;
+	}
+	
 	
 	/* nes-???系フォント制御用 */
 	.nes-btn {
