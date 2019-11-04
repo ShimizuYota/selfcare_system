@@ -26,3 +26,6 @@ testing html file
 - test2.html  
 新規登録&ログイン画面のようなもの（サーバーを使わないログインの遊び付き）  
 testing html file  
+- test3.html  
+広場画面のテストのようなもの（中身はサーバーも使わない簡素な奴）  
+testing html file  
