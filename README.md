@@ -4,8 +4,10 @@
 practice files  
 - main  
 メインファイル（実際のセルフケアアプリに使う？ファイル）  
-main files
-
+main files  
+- SelfcareSystem_files  
+SelfcareSystem（gitのsrmtlabにあり）の中身の元プログラムを保存しておくための緊急ファイル  
+saving SelfcareSystem's files  
 ## practice files
 特になし  
 ## main files
