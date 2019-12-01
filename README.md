@@ -15,6 +15,9 @@ js files
 - css  
 cssファイル  
 css files  
+- imgs  
+使用する画像等を置くためのファイル  
+images file  
 - sample.html  
 戻るボタン、進むボタン、進行度バー付きの画面外枠のテンプレ？  
 back btn, forward btn, progress bar & main frame  
@@ -29,3 +32,6 @@ testing html file
 - test3.html  
 広場画面のテストのようなもの（中身はサーバーも使わない簡素な奴）  
 testing html file  
+- test4(-1,-2,-3).html  
+グループワーク要素を強めた広場画面のテストのようなもの（デザインテスト）  
+testing html file
