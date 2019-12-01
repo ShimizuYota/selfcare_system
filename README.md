@@ -36,4 +36,5 @@ testing html file
 testing html file  
 - test4(-1,-2,-3).html  
 グループワーク要素を強めた広場画面のテストのようなもの（デザインテスト）  
+test4-3.htmlはswiper.jsを導入してるせいか、クソ重いかも？？  
 testing html file
