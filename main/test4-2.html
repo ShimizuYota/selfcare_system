@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- meta -->
+    <title>sample_frame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Nes.cssの導入部分? -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- 外部js,css -->
+    <script type="text/javascript" src="js/test4-2.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/test4-2.css">
+
+</head>
+
+<body>
+
+    <!-- 進行度、戻る/進むボタン -->
+    <div class="attach">
+        <button type="button" class="nes-btn back">戻る</button>
+        <progress class="nes-progress is-primary prog" value="0" max="100"></progress>
+        <button type="button" class="nes-btn forward is-disabled">進む</button>
+    </div>
+
+    <!-- 外枠、画面 -->
+    <div class="frame">
+
+        <div class="nes-field answer">
+            <input type="text" id="name_field" class="nes-input answer_text" placeholder="ここに解答を入力してね">
+        </div>
+        <button type="button" class="nes-btn btn_yes">はい</button>
+        <button type="button" class="nes-btn btn_no">いいえ</button>
+
+        <div class="plaza form-off">
+            <div class="plaza_container1">
+                <img src="./imgs/bear_left1.png" class="char_left">
+                <img src="./imgs/table2-1.png" class="table_left">
+            </div>
+            <div class="plaza_container2">
+                <img src="./imgs/bear1.png" class="char_center">
+                <img src="./imgs/table2.png" class="table_center">
+            </div>
+            <div class="plaza_container3">
+                <img src="./imgs/bear_right1.png" class="char_right">
+                <img src="./imgs/table2-2.png" class="table_right">
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
