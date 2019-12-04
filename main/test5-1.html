@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- meta -->
+    <title>sample_frame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Nes.cssの導入部分? -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- swiperの導入部分 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+
+    <!-- botuiの導入部分 -->
+    <link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/botui/build/botui-theme-default.css" />
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/botui/0.3.9/botui.min.js"></script>
+
+    <!-- 外部js,css -->
+    <script type="text/javascript" src="js/test5-1.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/test5-1.css">
+
+</head>
+
+<body>
+
+    <!-- 進行度、戻る/進むボタン -->
+    <div class="attach">
+        <button type="button" class="nes-btn back">戻る</button>
+        <progress class="nes-progress is-primary prog" value="0" max="100"></progress>
+        <button type="button" class="nes-btn forward is-disabled">進む</button>
+    </div>
+
+    <!-- 外枠、画面 -->
+    <div class="frame">
+
+        <!-- 会話部分 botui -->
+        <div id="group_work" class="nes-container is-rounded bot-ui_container">
+            <bot-ui></bot-ui>
+        </div>
+
+        <!-- 解答フォーム、はい/いいえボタン -->
+        <div class="nes-field answer">
+            <input type="text" id="name_field" class="nes-input answer_text" placeholder="ここに解答を入力してね">
+        </div>
+        <button type="button" class="nes-btn btn_yes">はい</button>
+        <button type="button" class="nes-btn btn_no">いいえ</button>
+
+        <!-- 広場画面 swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper plaza form-off">
+                <div class="swiper-slide plaza_container1">
+                    <img src="./imgs/bear_left1.png" class="char_left">
+                    <img src="./imgs/table2-1.png" class="table_left">
+                </div>
+                <div class="swiper-slide plaza_container2">
+                    <img src="./imgs/bear1.png" class="char_center">
+                    <img src="./imgs/table2.png" class="table_center">
+                </div>
+                <div class="swiper-slide plaza_container3">
+                    <img src="./imgs/bear_right1.png" class="char_right">
+                    <img src="./imgs/table2-2.png" class="table_right">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev nes-btn">←</div>
+            <div class="swiper-button-next nes-btn">→</div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
