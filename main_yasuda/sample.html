@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+		<head>
+				<!-- meta -->
+				<title>sample_frame</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+				
+				<!-- Nes.cssの導入部分? -->
+				<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|" rel="stylesheet">
+				<link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet">
+				
+				<!-- jQuery 外部js,css -->
+				<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+				<script type="text/javascript" src="sample.js"></script>
+				<link rel="stylesheet" type="text/css" href="sample.css">
+				
+				<!-- BotUI -->
+				<link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css" />
+                <link rel="stylesheet" href="https://unpkg.com/botui/build/botui-theme-default.css" />
+				
+			</head>
+			<body>
+				
+				<!-- 進行度、戻る/進むボタン -->
+				<div class="attach">
+						<button type="button" class="nes-btn back">戻る</button>
+						<progress class="nes-progress is-primary prog" value="50" max="100"></progress>
+						<button type="button" class="nes-btn forward">進む</button>
+				</div>
+				
+				<!-- 外枠、画面 -->
+				<div class="frame">
+					<div class="nes-container is-rounded">
+							<div class="botui-app-container1" id="hello-world">
+									<bot-ui></bot-ui>
+							</div>
+					</div>
+					<div class ="charactor ">
+							<img class = "bear" src="bear1.png">
+					</div>
+					
+				</div>
+				
+				<!-- BotUI-->
+				<script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+                <script src="https://unpkg.com/botui/build/botui.min.js"></script>
+                
+				
+				
+			</body>
+</html>
