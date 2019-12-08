@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- meta -->
+    <title>sample_plaza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Nes.cssの導入部分? -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- swiper.min.cssの導入部分 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+
+    <!-- 外部js,css -->
+    <script type="text/javascript" src="js/test6.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/test6.css">
+
+</head>
+
+<body>
+
+    <!-- 進行度、戻る/進むボタン -->
+    <div class="attach">
+        <button type="button" class="nes-btn back is-disabled">戻る</button>
+        <progress class="nes-progress is-primary prog" value="0" max="100"></progress>
+        <button type="button" class="nes-btn forward is-disabled">進む</button>
+    </div>
+
+    <!-- 外枠、画面 -->
+    <div class="frame">
+
+        <!-- 会話表示部分 -->
+        <div class="nes-container is-rounded talk">
+            <p class="talk_content"></p>
+            <img class="talker">
+        </div>
+        <!-- 会話履歴 -->
+        <div class="nes-container is-rounded talk_history">
+            <button type="button" class="nes-btn btn_history_close">閉じる</button>
+            <div class="history_list"></div>
+        </div>
+        <!-- 回答欄、はい/いいえボタン 履歴/次へボタン -->
+        <div class="nes-field answer">
+            <input type="text" id="name_field" class="nes-input answer_text" placeholder="ここに解答を入力してね">
+        </div>
+        <button type="button" class="nes-btn btn_yes">はい</button>
+        <button type="button" class="nes-btn btn_no">いいえ</button>
+        <button type="button" class="nes-btn btn_history">履歴</button>
+        <button type="button" class="nes-btn btn_next">次へ</button>
+
+        <!-- swiper 画面 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper plaza form1-off form2-off">
+                <!-- 左ページ -->
+                <div class="swiper-slide plaza_container1">
+                    <div class="char_container1">
+                        <div class="nes-container is-rounded life_index_container1">
+                            <p class="life_index_left">さけるチーズ</p>
+                        </div>
+                        <img src="./imgs/bear/bear_left1.png" class="char_left">
+                    </div>
+                    <img src="./imgs/other/table2-1.png" class="table_left">
+                </div>
+                <!-- 中央ページ -->
+                <div class="swiper-slide plaza_container2">
+                    <div class="char_container2">
+                        <div class="nes-container is-rounded life_index_container2">
+                            <p class="life_index_center">味噌汁</p>
+                        </div>
+                        <img src="./imgs/bear/bear1.png" class="char_center">
+                    </div>
+                    <img src="./imgs/fairy/fairy_winter1.png" class="fairy">
+                    <img src="./imgs/other/table2.png" class="table_center">
+                </div>
+                <!-- 右ページ -->
+                <div class="swiper-slide plaza_container3">
+                    <div class="char_container3">
+                        <div class="nes-container is-rounded life_index_container3">
+                            <p class="life_index_right">ゲーム</p>
+                        </div>
+                        <img src="./imgs/bear/bear_right1.png" class="char_right">
+                    </div>
+                    <img src="./imgs/other/table2-2.png" class="table_right">
+                </div>
+            </div>
+            <!-- ページネーション、画面移動ボタン -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev nes-btn">←</div>
+            <div class="swiper-button-next nes-btn">→</div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
