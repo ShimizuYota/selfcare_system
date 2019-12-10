@@ -1,0 +1,62 @@
+## SelfcareSystem LOD/RDF
+
+## prefix
+# @base <http://example.org/> .
+# @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+# @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix wd: <http://www.wikidata.org/entity/>.
+@prefix sadvo: <http://lod.srmt.nitech.ac.jp/sadv/ontology/>.
+@prefix sadvu: <http://lod.srmt.nitech.ac.jp/sadv/user/>.
+@prefix sadvr: <http://lod.srmt.nitech.ac.jp/sadv/routine/>.
+@prefix sadvava: <http://lod.srmt.nitech.ac.jp/sadv/avator/>.
+@prefix sadvs: <http://lod.srmt.nitech.ac.jp/sadv/schedule/>.
+@prefix sadvact: <http://lod.srmt.nitech.ac.jp/sadv/activity/>.
+
+
+## users
+sadvu:1
+	sadvu:hasEmail "sytytuyao@srmtlab.org";
+	sadvu:hasPassword "qwerty";
+	foaf:name "ヨータ"@ja;
+	foaf:age 22;
+	foaf:gender: "male";
+	sadvu:remindAt: "20:00:00".
+
+
+## routines
+sadvr:1
+	sadvr:whoHas sadvu:1;
+	sadvr:text "さけるチーズ";
+	sadvr:period 1;
+	sadvr:count 1;
+	sadvr:importance 6.0;
+	sadvr:confidence 0.0;
+	sadvr:wdLabel Q65234851;
+	sadvr:categoryOf "2".
+
+
+## avators
+sadvava:1
+	sadvava:whoHas sadvu:1;
+	foaf:name "クママガオ";
+	sadvava:hasIcon "imgs/bear1.png".
+
+
+## schedules
+sadvs:1
+	sadvs:whoHas sadvu:1.
+
+
+## activities
+sadvact:1
+	sadvact:belongTo sadvs:1;
+	sadvact:startAt "01:00:00";
+	sadvact:endAt "08:00:00";
+	sadvact:text "睡眠".
+
+sadvact:2
+	sadvact:belongTo sadvs:1;
+	sadvact:startAt "13:00:00";
+	sadvact:endAt "15:30:00";
+	sadvact:text "ゼミ".

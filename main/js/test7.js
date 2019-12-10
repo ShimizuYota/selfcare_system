@@ -175,13 +175,23 @@ $(function () {
     $(".char_left").attr("src", left_imgs[0]);
     $(".char_center").attr("src", center_imgs[0]);
     $(".char_right").attr("src", right_imgs[0]);
-    //広場画面開始
-    $(".btn_history").hide().fadeIn(1000);
-    $(".btn_next").hide().fadeIn(1000);
-    $(".talk").hide().fadeIn(1000, function () {
-        $(".fairy").attr("src", "./imgs/fairy/fairy_winter1.gif");
-        $(".talker").attr("src", "./imgs/fairy/fairy_winter1.png");
-        display_talk(template[0], user_info, left_num, center_num, right_num);
+    //広場画面案内
+    $(".btn_history_start").on("click", function () {
+        $(".talk_history").fadeOut(1000, function () {
+            $(".talk_history").css("visibility", "hidden");
+            $(".talk_history").css("display", "block");
+            $(".history_list").html("");
+            $(".btn_history_close").css("display", "inline-block");
+            $(".btn_history_start").css("visibility", "hidden");
+            //広場画面開始
+            $(".btn_history").fadeIn(1000);
+            $(".btn_next").fadeIn(1000);
+            $(".talk").fadeIn(1000, function () {
+                $(".fairy").attr("src", "./imgs/fairy/fairy_winter1.gif");
+                $(".talker").attr("src", "./imgs/fairy/fairy_winter1.png");
+                display_talk(template[0], user_info, left_num, center_num, right_num);
+            });
+        });
     });
     $(".btn_next").on("click", function () {
         if (i < template.length) {
